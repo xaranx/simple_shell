@@ -18,7 +18,7 @@ void shell_loop(data_shell *datash)
 	while (loop == 1) /* Execute the loop while the loop control variable is 1 */
 	{
 		/* Print the shell prompt */
-		write(STDIN_FILENO, "--> ", 4);
+		write(STDIN_FILENO, "$ ", 2);
 
 		/* Read the input line, and check for end-of-file (i_eof) condition */
 		input = read_line(&i_eof);
