@@ -31,7 +31,7 @@ void check_env(r_var **h, char *in, data_shell *data)
 	}
 
 	/* Loop until a space, tab, semicolon, or newline is encountered */
-	for (j = 0; in[j] && !strcspn(" \t;\n", &in[j]); j++)
+	for (j = 0; in[j] && in[j] != ' ' && in[j] != '\t' && in[j] != ';' && in[j] != '\n'; j++)
 		;
 
 	add_rvar_node(h, j, NULL, 0);
