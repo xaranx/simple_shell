@@ -34,7 +34,7 @@ void shell_loop(data_shell *datash)
 			if (check_syntax_error(datash, input) == 1)
 			{
 				datash->status = 2; /* Set the status to 2 for syntax error */
-				free(input); /* Free the allocated memory for input */
+				/* free(input); Free the allocated memory for input */
 				continue; /* Skip to the next iteration of the loop */
 			}
 			/* Replace variables in the input */
