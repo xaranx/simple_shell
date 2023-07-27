@@ -121,8 +121,8 @@ int _setenv(data_shell *datash)
 
 
 /*
- * _unsetenv - deletes a environment variable
- *
+ * _unsetenv - deletes an environment variable
+ * Description: it takes a pointer to a data_shell struct
  * @datash: data relevant (env name)
  *
  * Return: 1 on success.
